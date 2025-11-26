@@ -42,7 +42,7 @@ static VL53LX_MultiRangingData_t *pMultiRangingData = &MultiRangingData;
  *  @param  i2c_address - I2C Address to set for this device
  * @retval  The Dev Object to pass to other library functions.
  *****************************************************************************/
-VL53LX_DEV *initialise(uint8_t i2c_address, uint8_t perform_reset)
+VL53LX_Dev_t *initialise(uint8_t i2c_address, uint8_t perform_reset)
 {
     VL53LX_Error Status = VL53LX_ERROR_NONE;
     uint32_t refSpadCount;
